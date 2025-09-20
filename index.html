@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Memory Card Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="topbar">
+      <h1>Memory Card Game</h1>
+      <div class="controls">
+        <div class="stats">
+          <span>Moves: <span id="moves">0</span></span>
+          <span>Time: <span id="timer">00:00</span></span>
+        </div>
+        <div class="buttons">
+          <select id="difficulty" title="Choose grid size">
+            <option value="4">4 × 4 (Easy)</option>
+            <option value="6">6 × 6 (Hard)</option>
+          </select>
+        </div>
+        <section id="gameArea">
+  <div id="grid" class="grid grid-4"></div>
+  <div class="center-btn">
+    <button id="newGameBtn">🔄 New Game</button>
+  </div>
+</section>
+      </div>
+    </header>
+  </main>
+
+  <!-- Congratulations modal -->
+  <div id="congrats" class="modal hidden">
+    <div class="modal-content">
+      <h2>Congratulations! 🎉</h2>
+      <p id="finalStats"></p>
+      <button id="playAgain">Play Again</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <small>Built with HTML, CSS & JavaScript • Save files locally and open index.html</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
